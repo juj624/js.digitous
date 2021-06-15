@@ -9,7 +9,7 @@ var name ="penot";
 console.log("nice to meet you" +" "+name);
 
 var testLength = "I'm very long !";
-console.log(testLength);
+console.log(testLength.lengthno);
 
 var food = "croissant is meh";
 food = food.replace("meh","good");
@@ -21,7 +21,9 @@ var basicUp = basic.toUpperCase();
 var basicDown = basic.toLowerCase();
 
 console.log(basic, "\n", basicUp,"\n", basicDown);
-
+/* console.log(basic)*/
+/* console.log(basicUp)*/
+/* console.log(basicDown)*/
 
 var word = "banana";
 var letters = word.split("");
