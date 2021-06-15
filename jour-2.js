@@ -138,6 +138,7 @@ switch (month) {
 
 var rounderNumber = 3.6;
 
-console.log()
+ rounderNumber - Math.floor(rounderNumber);
+ console.log(rounderNumber);
 
 /*Fin du bonus 3 */
