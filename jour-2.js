@@ -4,7 +4,7 @@
 var integer = 102;
 var float = 13.9;
 
-console.log(integer, "\n",float);
+console.log(integer,float);
 
 /*Fin de l'exercice 1*/
 
@@ -28,12 +28,14 @@ var stringified = basic.toString();
  /* fin de l'exercice 3*/
 
  /*exercice 4 */
+
  var test = 12;
  var bis = 5 ;
- console.log(test-bis);
- console.log(test+bis);
- console.log(test/bis);
- console.log(test*bis);
+
+ console.log(test - bis);
+ console.log(test + bis);
+ console.log(test / bis);
+ console.log(test * bis);
  console.log(test % bis);
  console.log(test ** bis);
 
@@ -50,13 +52,15 @@ var stringified = basic.toString();
 
  var test = 143;
  var bis = 219;
- console.log(test<bis);
- console.log(test>bis);
- console.log(test>=bis);
- console.log(test==bis);
- console.log(test===bis);
- console.log(test!=bis);
- console.log(test!==bis);
+ console.log(test < bis);
+ console.log(test > bis);
+ console.log(test >= bis);
+ console.log(test <= bis);
+ console.log(test == bis);
+ console.log(test === bis);
+ console.log(test != bis);
+ console.log(test !== bis);
+
  /*fin de l'exercice 5*/
 
  /*exercice 6*/
@@ -76,9 +80,10 @@ score = 45;
  /*fin de l'exercice exercice 6*/
 
  /* exercice 7 */
+
  var password = "azerty";
   if (password.length>5){
-     console.log("password is secure");
+     console.log("The password is secure");
   }
 
  /*fin de l'exercice 7 */
@@ -102,14 +107,16 @@ score = 45;
  var minrandom = 1;
  var maxrandom = 6;
  var random = Math.floor(Math.random()* (maxrandom - minrandom + 1)+  minrandom)
-    console.log(random);
+ console.log(random);
 
  if  (random === 6) {
      console.log("yes i win !");
  } else {
      console.log("so close...");
  }
+
 /*Fin du bonus */
+
 
 /*BONUS 2*/
 
@@ -130,6 +137,9 @@ switch (month) {
     break;
     case "august":
         console.log("summer")
+    break;
+    default:
+        console.log("That' not season...")
 }
 
 /* FIN BONUS 2*/
@@ -138,7 +148,10 @@ switch (month) {
 
 var rounderNumber = 3.6;
 
- rounderNumber - Math.floor(rounderNumber);
- console.log(rounderNumber);
+ if (rounderNumber - Math.floor(rounderNumber)){
+    console.log(rounderNumber);
+ } else  {
+     console.log(Math.ceil(roundedNumber));
+ }
 
 /*Fin du bonus 3 */
