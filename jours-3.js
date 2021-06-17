@@ -1,14 +1,14 @@
 /*Array exo 1*/
 
-//var fruits = ["mango","lemon","blueberry"];
-//console.log(fruits);
-//console.table(fruits);
+var fruits = ["mango","lemon","blueberry"];
+console.log(fruits);
+console.table(fruits);
 /* fin array exo 1*/
 
 /*Access exo 2 */
-//var ingredients =["egg","milk","butter"]
-//console.log(ingredients[1]);
-//console.log(ingredients.indexOf("butter"));
+var ingredients =["egg","milk","butter"]
+console.log(ingredients[0]);
+console.log(ingredients.indexOf("butter"));
 /*Fin Access exo 2 */
 
 /*exercice 3 add and remove*/
@@ -30,13 +30,13 @@ console.log(objects);
 /*exercice 4*/
 
 var number = [4,10,8,12,6];
-number.reverse(number);
+number.sort((a,b) => a-b);
 console.log(number);
 
 
-number.sort();
+number.sort((a,b) => b-a);
 console.log(number);
-/*Fin eercice 5*/
+/*Fin eercice 4*/
 
 /*debut exercice 5*/
 
@@ -89,3 +89,7 @@ while ( i < limit) {
     total = total + i;
 }
 console.log(total);
+
+/*BONUS 3 */
+
+var camarades =["anthony","kevin","laura","rhamad"];
