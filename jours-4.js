@@ -8,9 +8,9 @@ var cat = {
  console.log(cat);
  console.log(cat.age);
 
-  if (isCute = true){
+  if (cat.isCute){
     console.log("So cute");
-  } else ("")
+  }
 
   /* fin exos 1 */
 
@@ -19,11 +19,18 @@ var cat = {
 var cat2 = {
     name : "giroud",
     age : 32,
-    isCute : true,
+    isCute : false,
 }
-var cats = [cat,cat2];
+
+
+var cats = [cat, cat2];
 console.log(cats[0].age);
+console.log(cats[0]["age"]);
+
 console.log(cats[1].isCute);
+var cqv = "isCute";
+console.log(cats[1][cqv]);
+
 
   /*fin exos 2 */
 
@@ -54,26 +61,30 @@ function compare(num1,num2) {
     }
 }    
     compare(4,1);
+    compare(6,6);
+    compare(4,8);
 
   /*Fin de l'exercice 4*/
 
   /* exercice 5*/
-//     var total = 0;
+     var total = 0;
 
-//   function addUpp(num) {
-//       for (var i = 1 ; i<= num; i++){
-//           total = total + i;
-          
-//       }
-//   }
-//   addUpp(12);
-//   console.log(total);
+   function addUpp(num) {
+       for (var i = 1 ; i<= num; i++){
+           total = total + i;
+          //console.log(`le total est ${total}`);
+       }
+   }
+ //  addUpp(12);
+ // console.log(total);
 
 function addUpp(num) {
     var total = 0;
+
     for(var i = 1; i<= num; i++) {
         total = total + i ;
     } 
+
     return total
 }
 
@@ -83,7 +94,48 @@ console.log(addUpp(2));
   /* Fin de l'exercice 5*/
 
   /*exercice 6*/
-
-
-  
+//  var  reste = 3700 % 3600 ;
+//  Math.floor(3770/3600) = 1
+//  var minutes = Math.floor(reste/60)=1
+//  var seconde = reste % 60 = 40
   /*Fin de l'exercice 6*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //BONUS
+
+  function generatePassword(num) {
+      if(num < 6 || num > 15){
+          return "error";
+      }
+
+      let lettres = ["A", "B", "C", "D", "E", "F", "G", "H", "I","J", "K", "L"];
+      let password = ""
+
+      for (let i = 0; i<= num; i++) {
+        let index = Math.floor(Math.random()*lettres.length -1);
+        password += lettres[index];
+      }
+
+      return password;
+
+  }
+    console.log("")
+    console.log(generatePassword(8));
+    
