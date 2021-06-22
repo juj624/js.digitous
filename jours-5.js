@@ -28,8 +28,11 @@
 
 //04
 
+var prompt = require("prompt");
+prompt.start();
 
+var mysteryNum = Math.floor(Math.random() * (100-1)+1);
 
 function play() {
-    var mysteryNum = Math.floor(Math.random() * (1-100 + 1)) + max;
+    prompt.get({ name: "q", description: "Quel est le nombre mystère ?"
 }
