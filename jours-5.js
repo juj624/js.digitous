@@ -61,6 +61,8 @@ function play() {
       }if (parseInt(res.nb) < mysteryNum) {
         console.log("plus");
         play(); 
+      } else {
+        console.log("error");
       }
       
     });
