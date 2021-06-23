@@ -17,22 +17,54 @@
 
 // // calculate(parseInt(process.argv[2]),process.argv[3],parseInt(process.argv[4]));
 
+
+
+
 // 2//
- 
+ // on a copier la fonction et ensuite coller dans l'autre page appeler table-untils.js//
 
-// // var {addition,multiply} = require("./table-untils");
+ // var {addition,multiply} = require("./table-untils");
 
-// // addition(parseInt(process.argv[2]));
+ // addition(parseInt(process.argv[2]));//(viens de la page table-untils.js)//
 
 // // multiply(parseInt(process.argv[2]));
 
 //04
 
+// var prompt = require("prompt");
+// prompt.start();
+
+// var mysteryNum = Math.floor(Math.random() *(100-1)+1);
+
+// function play() {
+//     prompt.get({
+//         name:"user",
+//         description:"Quel est le nombre mystère ?",
+//     }
+//     )
+// },function(err,res)
+
+
 var prompt = require("prompt");
-prompt.start();
+    prompt.start();
 
-var mysteryNum = Math.floor(Math.random() * (100-1)+1);
+    var mysteryNum = Math.floor(Math.random() *(100-1)+1);
 
-function play() {
-    prompt.get({ name: "q", description: "Quel est le nombre mystère ?"
-}
+function play() { 
+    prompt.get({ name: "nb", description: "Quel est le nombre mystère  ?"}, function (err, res) { 
+      if(parseInt(res.nb) === mysteryNum) {
+        console.log("bravo !!!");
+      }
+      if (parseInt(res.nb) > mysteryNum) { 
+        console.log("moins");
+        play()
+      }if (parseInt(res.nb) < mysteryNum) {
+        console.log("plus");
+        play(); 
+      }
+      
+    });
+  }
+  play(); 
+   
+  
