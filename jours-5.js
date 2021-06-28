@@ -52,6 +52,9 @@ var prompt = require("prompt");
 
 function play() { 
     prompt.get({ name: "nb", description: "Quel est le nombre mystère  ?"}, function (err, res) { 
+      if(parseInt(res.nb) !== "number") {
+        console.log("bravo !!!");
+      }
       if(parseInt(res.nb) === mysteryNum) {
         console.log("bravo !!!");
       }
@@ -61,10 +64,7 @@ function play() {
       }if (parseInt(res.nb) < mysteryNum) {
         console.log("plus");
         play(); 
-      } else {
-        console.log("error");
-      }
-      
+      } 
     });
   }
   play(); 

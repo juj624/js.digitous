@@ -32,20 +32,31 @@ console.log(count);
 
 //03
 
-var ussainBolt = 0;
-    tysonGay = 0;
+// var ussainBolt = 0;
 
-    while (susainBolt <100 && tysonGay < 100) {
-        ussainBolt += Math.floor(Math.random()*10) +1;
-        tysonGay += Math.floor(Math.random()*10)+1;
-        console.log(ussainBolt,tysonGay);
+//     tysonGay = 0;
+
+//     while (susainBolt <100 && tysonGay < 100) {
+//         ussainBolt += Math.floor(Math.random()*10) +1;
+//         tysonGay += Math.floor(Math.random()*10)+1;
+//         console.log(ussainBolt,tysonGay);
+//     }
+//     if (ussainBolt > tysonGay) {
+//         console.log("winner is ussainBolt");
+//     }
+//     else if (tysonGay > ussainBolt) {
+//         console.log("winner is tyson");
+//     }
+//     else {
+//         console.log("they are equal");
+//     }
+
+    //
+    var i = 0;
+    var box1 = 7;
+    while (i > 0) {
+        i++;
+        console.log(box1 + i);
     }
-    if (ussainBolt > tysonGay) {
-        console.log("winner is ussainBolt");
-    }
-    else if (tysonGay > ussainBolt) {
-        console.log("winner is tyson");
-    }
-    else {
-        console.log("they are equal");
-    }
+    console.log(i);
+    console.log(box1);
