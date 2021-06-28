@@ -37,22 +37,22 @@
 
 //exercice 4
 
-var array = [1,"toto",34,"javascript",8];
-var numbers = array.filter(function(num){
-    return typeof num === "number";
-});
-console.log(numbers);
+// var array = [1,"toto",34,"javascript",8];
+// var numbers = array.filter(function(num){
+//     return typeof num === "number";
+// });
+// console.log(numbers);
 
-//5
- var numbers = [1,2,3,4,5,6,7,8];
- var even = numbers.filter(function(num){
-     return num % 2 === 0
- });
- console.log(even);
+// //5
+//  var numbers = [1,2,3,4,5,6,7,8];
+//  var even = numbers.filter(function(num){
+//      return num % 2 === 0
+//  });
+//  console.log(even);
 
  //6
 
- var cake =
+ var cakes =
 [
      {
          name: "cake",
@@ -80,7 +80,16 @@ console.log(numbers);
          status: "available"
      },
  ];
- var newthing = cake.filter().map(funtion(value))
- return {status: `${value.} ${value!}
- `}
+ var chocolate = cakes.filter(function(str){
+    return str.flavor === "chocolate";
+
+ });
+ var chocolate1 = chocolate.map(function(str){
+    str.status = "sold out !";
+    return str
+
+ });
+ console.log(chocolate1);
+
  
+
